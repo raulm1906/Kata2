@@ -12,12 +12,12 @@ public class Kata2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Integer[] data = {1,4,10,-1,4,10,4,4,1,-1,9,1,9,10,-1};
+        String[] data = {"Perico","Fulanito","Antonio","Alberto","Fulanito","Antonio","Fulanito","Fulanito","Perico","Alberto","Paco","Perico","Paco","Antonio","Alberto"};
         Histogram histo = new Histogram(data);
         
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
         
-        for (Integer key : histogr.keySet()){
+        for (String key : histogr.keySet()){
             System.out.println(key + "===>" + histogr.get(key));
             
         }
